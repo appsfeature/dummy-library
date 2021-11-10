@@ -1,8 +1,7 @@
 package com.dummylibrary;
 
 import android.content.Context;
-
-import com.dummylibrary.libhelper.LibHelper;
+import android.widget.Toast;
 
 public class DummyLib {
 
@@ -24,6 +23,6 @@ public class DummyLib {
     }
 
     public void showToast(Context context, String message) {
-        LibHelper.getInstance().toast(context, message);
+        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
     }
 }
