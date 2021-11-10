@@ -1,4 +1,4 @@
 rootProject.name = "dummy-library"
 include ':app'
 include ':dummylib'
-//include ':libhelper'
+include ':libhelper'

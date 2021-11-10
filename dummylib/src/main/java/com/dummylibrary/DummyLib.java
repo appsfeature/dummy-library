@@ -3,6 +3,8 @@ package com.dummylibrary;
 import android.content.Context;
 import android.widget.Toast;
 
+import com.dummylibrary.libhelper.LibHelper;
+
 public class DummyLib {
 
     private static volatile DummyLib sSoleInstance;
@@ -23,6 +25,6 @@ public class DummyLib {
     }
 
     public void showToast(Context context, String message) {
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+        LibHelper.getInstance().toast(context, message);
     }
 }

@@ -23,6 +23,6 @@ public class LibHelper {
     }
 
     public void toast(Context context, String message) {
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "LibHelper:" + message, Toast.LENGTH_SHORT).show();
     }
 }
