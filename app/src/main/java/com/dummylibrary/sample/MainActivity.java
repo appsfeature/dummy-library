@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.dummylibrary.DummyLib;
-import com.helper.util.SocialUtil;
+//import com.helper.util.SocialUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClicked(View view) {
         DummyLib.getInstance().showToast(this, "Happy To Help You!");
-        SocialUtil.openLinkInAppBrowser(this,"Browser","https://facebook.com");
+//        SocialUtil.openLinkInAppBrowser(this,"Browser","https://facebook.com");
     }
 }
